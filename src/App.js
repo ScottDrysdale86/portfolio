@@ -1,9 +1,12 @@
-import './App.css';
+import "./App.css";
 
 function App() {
-  return (
-    <p>Hello</p>
-  );
+	return (
+		<>
+			<h1>Hello</h1>
+			<p>This is my Portfolio Site</p>
+		</>
+	);
 }
 
 export default App;
