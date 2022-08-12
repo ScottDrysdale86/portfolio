@@ -1,22 +1,43 @@
+import styled from "styled-components";
+
 const MainPage = () => {
 	return (
-		<div className="mainPage">
-			<img
-				className="me"
-				width="20%"
-				src={require("../images/me.png")}
-				alt="Me"
-			></img>
+		<Wrapper>
+			<ProfilePic src={require("../images/me.png")} alt="Me"></ProfilePic>
 
-			<div className="details">
-				<h2> 👋 Hi, I'm Scott</h2>
-				<h3> 💻 I'm a junior developer.</h3>
-				<h5> 🌍 Based in West Lothian, Scotland</h5>
-				<h5> 💭 Student at CodeClan</h5>
-				<h5> 🔗 Let's Connect!</h5>
-			</div>
-		</div>
+			<Details>
+				<Name> 👋 Hi, I'm Scott</Name>
+				<Bullet> 💻 I'm a junior developer.</Bullet>
+				<Bullet> 🌍 Based in West Lothian, Scotland</Bullet>
+				<Bullet> 💭 Student at CodeClan</Bullet>
+				<Bullet> 🔗 Let's Connect!</Bullet>
+			</Details>
+		</Wrapper>
 	);
 };
 
+const Wrapper = styled.div`
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+`;
+
+const ProfilePic = styled.img`
+	width: 20%;
+	margin: 1%;
+`;
+
+const Details = styled.div`
+	display: flex;
+	flex-direction: column;
+`;
+
+const Name = styled.h2``;
+
+const Bullet = styled.h5`
+	margin: 0;
+	margin-bottom: 5%;
+	width: max-content;
+`;
 export default MainPage;
