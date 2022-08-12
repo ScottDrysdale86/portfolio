@@ -1,12 +1,8 @@
 import "./App.css";
+import Container from "./Containers/Container";
 
 function App() {
-	return (
-		<>
-			<h1>Hello</h1>
-			<p>This is my Portfolio Site</p>
-		</>
-	);
+	return <Container />;
 }
 
 export default App;
