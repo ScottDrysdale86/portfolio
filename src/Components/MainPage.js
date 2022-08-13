@@ -21,7 +21,6 @@ const Wrapper = styled.div`
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	height: 65vh;
 `;
 
 const ProfilePic = styled.img`
@@ -43,4 +42,5 @@ const Bullet = styled.h5`
 	margin-bottom: 5%;
 	width: max-content;
 `;
+
 export default MainPage;

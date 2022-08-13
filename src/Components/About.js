@@ -22,14 +22,13 @@ const About = () => {
 const Wrapper = styled.div`
 	display: flex;
 	justify-content: center;
-	height: 65vh;
 `;
 
 const Info = styled.p`
 	border: 4px solid #75fd92;
 	border-radius: 15px;
 	padding: 2%;
-	height: max-content;
+	max-width: fit-content;
 `;
 
 export default About;
