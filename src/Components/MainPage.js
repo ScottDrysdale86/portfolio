@@ -7,7 +7,7 @@ const MainPage = () => {
 
 			<Details>
 				<Name> 👋 Hi, I'm Scott</Name>
-				<Bullet> 💻 I'm a junior developer.</Bullet>
+				<Bullet> 💻 I'm a Junior Software Developer.</Bullet>
 				<Bullet> 🌍 Based in West Lothian, Scotland</Bullet>
 				<Bullet> 💭 Student at CodeClan</Bullet>
 				<Bullet> 🔗 Let's Connect!</Bullet>
@@ -21,11 +21,14 @@ const Wrapper = styled.div`
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	height: 65vh;
 `;
 
 const ProfilePic = styled.img`
 	width: 20%;
 	margin: 1%;
+	border: solid #75fd92 0.5rem;
+	border-radius: 50%;
 `;
 
 const Details = styled.div`

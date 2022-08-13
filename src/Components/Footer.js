@@ -7,7 +7,7 @@ const Footer = () => {
 			<SocialItem>
 				<LinkTagLinked href="http://www.linkedin.com" target="_blank">
 					<LinkPic
-						src={require("../images/linked.png")}
+						src={require("../images/linked.jpeg")}
 						alt="LI logo"
 					></LinkPic>
 				</LinkTagLinked>
@@ -17,38 +17,34 @@ const Footer = () => {
 					href="http://www.github.com/ScottDrysdale86"
 					target="_blank"
 				>
-					<LinkPic
-						src={require("../images/git.png")}
+					<LinkPicGit
+						src={require("../images/git.jpeg")}
 						alt="Git logo"
-					></LinkPic>
+					></LinkPicGit>
 				</LinkTagGit>
 			</SocialItem>
 		</Wrapper>
 	);
 };
 
-const Wrapper = styled.footer`
+const Wrapper = styled.ul`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: 1.3rem;
-	font-weight: bold;
+	padding: 0;
 	background-color: #e9ac1f;
+	padding-left: 20%;
 `;
 
 const SocialItem = styled.li`
 	display: flex;
-	justify-items: center;
-	align-items: center;
-	text-align: center;
 	list-style: none;
 	margin: 2%;
-	color: #000000;
 `;
 
 const LinkTagLinked = styled.a`
 	text-align: right;
-	margin-right: 3%;
+	/* margin-right: 3%; */
 `;
 
 const LinkTagGit = styled.a`
@@ -57,5 +53,11 @@ const LinkTagGit = styled.a`
 
 const LinkPic = styled.img`
 	width: 20%;
+	mix-blend-mode: multiply;
+`;
+
+const LinkPicGit = styled.img`
+	width: 10%;
+	mix-blend-mode: multiply;
 `;
 export default Footer;

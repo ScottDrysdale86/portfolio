@@ -30,6 +30,7 @@ const NavBar = styled.ul`
 	font-family: 1.3rem;
 	font-weight: bold;
 	background-color: #e9ac1f;
+	padding: 0;
 `;
 
 const Item = styled.li`

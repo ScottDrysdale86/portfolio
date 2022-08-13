@@ -1,7 +1,9 @@
+import styled from "styled-components";
+
 const About = () => {
 	return (
-		<div>
-			<p className="aboutMe">
+		<Wrapper>
+			<Info className="aboutMe">
 				I am a self-motivated, analytical and enthusiastic individual
 				who is currently completing a Professional Software Development
 				course at Code Clan and have a BEng Hons Electrical and Computer
@@ -12,9 +14,22 @@ const About = () => {
 				developer which will offer the opportunity to develop my skills
 				professionally by expanding on the concepts I have and will
 				learn.
-			</p>
-		</div>
+			</Info>
+		</Wrapper>
 	);
 };
+
+const Wrapper = styled.div`
+	display: flex;
+	justify-content: center;
+	height: 65vh;
+`;
+
+const Info = styled.p`
+	border: 4px solid #75fd92;
+	border-radius: 15px;
+	padding: 2%;
+	height: max-content;
+`;
 
 export default About;

@@ -7,7 +7,7 @@ import Projects from "../Components/Projects";
 
 const Container = () => {
 	return (
-		<Router>
+		<Router className="page">
 			<Navigation />
 			<Routes>
 				<Route path="/" element={<MainPage />}></Route>
