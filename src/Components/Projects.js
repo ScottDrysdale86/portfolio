@@ -3,6 +3,7 @@ import styled from "styled-components";
 const Projects = () => {
 	return (
 		<Wrapper>
+			<TopTitle>Projects</TopTitle>
 			<ProjectBox>
 				<Title>Employee Management System</Title>
 				<Pic src={require("../images/EMS.png")} alt="EMS"></Pic>
@@ -18,10 +19,29 @@ const Projects = () => {
 				</GitLink>
 			</ProjectBox>
 			<ProjectBox>
+				<Title>Football League Standings</Title>
+				<Pic
+					src={require("../images/football.png")}
+					alt="Football APP"
+				></Pic>
+				<Description>
+					React App utilising an API to access and display data. User
+					can flter various football leagues from around the world as
+					well as filter by season to show results. Can also select a
+					team in the league displayed to get more information.
+				</Description>
+				<GitLink
+					href="https://github.com/ScottDrysdale86/Week7-reactApp-API-football"
+					target="_blank"
+				>
+					Link to Source
+				</GitLink>
+			</ProjectBox>
+			<ProjectBox>
 				<Title>Upcoming JavaScript Project</Title>
 				<Pic></Pic>
 				<Description>No Idea Yet!!</Description>
-				<GitLink></GitLink>
+				<GitLink>Link to Source</GitLink>
 			</ProjectBox>
 		</Wrapper>
 	);
@@ -31,6 +51,11 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+`;
+
+const TopTitle = styled.h1`
+	text-decoration: underline;
+	margin: 0;
 `;
 
 const ProjectBox = styled.div`
@@ -50,7 +75,7 @@ const Title = styled.h2`
 `;
 const Pic = styled.img`
 	text-align: center;
-	width: 30%;
+	width: 60%;
 `;
 
 const Description = styled.p`

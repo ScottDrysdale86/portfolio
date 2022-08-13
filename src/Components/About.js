@@ -3,7 +3,8 @@ import styled from "styled-components";
 const About = () => {
 	return (
 		<Wrapper>
-			<Info className="aboutMe">
+			<Title>About Me</Title>
+			<Info>
 				I am a self-motivated, analytical and enthusiastic individual
 				who is currently completing a Professional Software Development
 				course at Code Clan and have a BEng Hons Electrical and Computer
@@ -21,14 +22,22 @@ const About = () => {
 
 const Wrapper = styled.div`
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	justify-content: center;
+`;
+
+const Title = styled.h1`
+	text-decoration: underline;
+	margin: 0;
 `;
 
 const Info = styled.p`
 	border: 4px solid #75fd92;
 	border-radius: 15px;
 	padding: 2%;
-	max-width: fit-content;
+	text-align: center;
+	width: 40%;
 `;
 
 export default About;

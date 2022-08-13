@@ -34,6 +34,7 @@ const NavBar = styled.ul`
 `;
 
 const Item = styled.li`
+	font-size: 2rem;
 	list-style: none;
 	margin: 2%;
 `;
