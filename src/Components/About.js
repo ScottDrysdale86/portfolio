@@ -37,7 +37,7 @@ const Info = styled.p`
 	border-radius: 15px;
 	padding: 2%;
 	text-align: center;
-	width: 40%;
+	width: 60%;
 `;
 
 export default About;
