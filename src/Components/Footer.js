@@ -44,11 +44,18 @@ const SocialItem = styled.li`
 
 const LinkTagLinked = styled.a`
 	text-align: right;
-	/* margin-right: 3%; */
+	&:hover {
+		transform: scale(1.05);
+		mix-blend-mode: multiply;
+	}
 `;
 
 const LinkTagGit = styled.a`
 	text-align: left;
+	&:hover {
+		transform: scale(1.05);
+		mix-blend-mode: multiply;
+	}
 `;
 
 const LinkPic = styled.img`
