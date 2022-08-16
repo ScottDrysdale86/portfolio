@@ -10,9 +10,12 @@ const Container = () => {
 		<Router className="page">
 			<Navigation />
 			<Routes>
-				<Route path="/" element={<MainPage />}></Route>
-				<Route path="/About" element={<About />}></Route>
-				<Route path="/Projects" element={<Projects />}></Route>
+				<Route path="/portfolio" element={<MainPage />}></Route>
+				<Route path="/portfolio/About" element={<About />}></Route>
+				<Route
+					path="/portfolio/Projects"
+					element={<Projects />}
+				></Route>
 			</Routes>
 			<Footer />
 		</Router>

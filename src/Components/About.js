@@ -25,6 +25,7 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin: 1%;
 `;
 
 const Title = styled.h1`
@@ -33,11 +34,16 @@ const Title = styled.h1`
 `;
 
 const Info = styled.p`
-	border: 4px solid #75fd92;
+	/* border: 4px solid #75fd92; */
+	border: 4px solid #f7ce3e;
+	box-shadow: 10px 10px 5px #f7ce3e;
+
+	background-color: #0a1612;
 	border-radius: 15px;
 	padding: 2%;
 	text-align: center;
 	width: 60%;
+	color: #c5c1c0;
 `;
 
 export default About;

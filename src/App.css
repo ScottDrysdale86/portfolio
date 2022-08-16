@@ -1,6 +1,13 @@
+body {
+	margin: 0;
+}
 :root {
-	background-color: #000000;
-	color: #e9ac1f;
+	/* background-color: #000000; */
+	background-color: #c5c1c0;
+
+	/* color: #e9ac1f; */
+	color: #0a1612;
+
 	font-family: "Source Code Pro", monospace;
 }
 
@@ -8,11 +15,14 @@
 	text-decoration: none;
 	padding-inline-start: 0;
 	margin-right: 40%;
-	color: #000000;
+	/* color: #000000; */
+	color: #c5c1c0;
 }
 
 .styledLink:hover {
-	color: #75fd92;
+	/* color: #75fd92; */
+	color: #f7ce3e;
+
 	transition: all 0.2s ease;
 	border-radius: 10px;
 	padding: 4%;
