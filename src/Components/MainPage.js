@@ -27,11 +27,7 @@ const Wrapper = styled.div`
 const ProfilePic = styled.img`
 	width: 20%;
 	margin: 1%;
-	/* border: solid #75fd92 0.5rem; */
-	/* border: solid #f7ce3e 0.5rem; */
-
 	border-radius: 50%;
-
 	box-shadow: 10px 10px 5px #f7ce3e;
 `;
 

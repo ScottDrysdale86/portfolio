@@ -31,9 +31,7 @@ const Wrapper = styled.ul`
 	justify-content: center;
 	align-items: center;
 	padding: 0;
-	/* background-color: #e9ac1f; */
 	background-color: #1a2930;
-
 	padding: 2%;
 	margin: 0;
 `;
@@ -48,7 +46,6 @@ const LinkTagLinked = styled.a`
 	text-align: right;
 	&:hover {
 		transform: scale(1.05);
-		/* mix-blend-mode: multiply; */
 	}
 `;
 
@@ -56,17 +53,14 @@ const LinkTagGit = styled.a`
 	text-align: left;
 	&:hover {
 		transform: scale(1.05);
-		/* mix-blend-mode: multiply; */
 	}
 `;
 
 const LinkPic = styled.img`
 	width: 10%;
-	/* mix-blend-mode: multiply; */
 `;
 
 const LinkPicGit = styled.img`
 	width: 10%;
-	/* mix-blend-mode: multiply; */
 `;
 export default Footer;

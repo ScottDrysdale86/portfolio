@@ -1,6 +1,13 @@
 import styled from "styled-components";
+import { useEffect } from "react";
 
 const Projects = () => {
+	useEffect(() => {
+		const obj = document.querySelector("#videos");
+		obj.defaultPlaybackRate = 2;
+		obj.load();
+		console.log(`find video ${obj.defaultPlaybackRate}`); // 1
+	}, []);
 	return (
 		<Wrapper>
 			<TopTitle>Projects</TopTitle>
@@ -22,10 +29,10 @@ const Projects = () => {
 			<ProjectBox>
 				<Title>Football League Standings</Title>
 				<Vids
+					id="videos"
 					width="100%"
 					controls
 					autoplay
-					playbackRate={2}
 					src={require("../images/footballApp.mov")}
 					type="video/mp4"
 				></Vids>
@@ -74,11 +81,8 @@ const ProjectBox = styled.div`
 	flex-direction: column;
 	align-items: center;
 	background-color: #0a1612;
-
-	/* border: 4px solid #75fd92; */
 	border: 4px solid #f7ce3e;
 	box-shadow: 10px 10px 5px #f7ce3e;
-
 	border-radius: 30px;
 	margin: 3%;
 	padding: 1%;
@@ -110,23 +114,16 @@ const GitLink = styled.a`
 	font-weight: bold;
 	text-decoration: none;
 	list-style: none;
-	/* background-color: #e9ac1f; */
 	background-color: #f7ce3e;
-	/* border: 3px solid black; */
 	border: 3px solid #0a1612;
 
 	border-radius: 20px;
 	padding: 1%;
 
 	&:hover {
-		/* background-color: Black; */
 		background-color: #0a1612;
-
-		/* color: #e9ac1f; */
 		color: #f7ce3e;
-		/* border: 3px solid #e9ac1f; */
 		border: 3px solid #f7ce3e;
-
 		border-radius: 20px;
 	}
 `;

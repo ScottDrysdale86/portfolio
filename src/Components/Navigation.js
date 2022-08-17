@@ -29,9 +29,7 @@ const NavBar = styled.ul`
 	align-items: center;
 	font-family: 1.3rem;
 	font-weight: bold;
-	/* background-color: #e9ac1f; */
 	background-color: #1a2930;
-
 	padding: 0;
 	margin: 0;
 `;

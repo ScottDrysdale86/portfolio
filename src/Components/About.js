@@ -34,7 +34,6 @@ const Title = styled.h1`
 `;
 
 const Info = styled.p`
-	/* border: 4px solid #75fd92; */
 	border: 4px solid #f7ce3e;
 	box-shadow: 10px 10px 5px #f7ce3e;
 
