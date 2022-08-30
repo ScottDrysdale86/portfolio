@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c3cf502f.css",
-    "main.js": "/portfolio/static/js/main.de07a70e.js",
+    "main.js": "/portfolio/static/js/main.38001448.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/footballApp.mov": "/portfolio/static/media/footballApp.e71dd975361f4797d724.mov",
+    "static/media/DevilsGripcomp2.mov": "/portfolio/static/media/DevilsGripcomp2.676f095d474699b74f95.mov",
     "static/media/EMS.png": "/portfolio/static/media/EMS.1174dfaac53c31958781.png",
     "static/media/me.png": "/portfolio/static/media/me.cff08b96e28d8dd8b33f.png",
     "static/media/Git.png": "/portfolio/static/media/Git.3ec61b93854178c47369.png",
     "static/media/Linked.png": "/portfolio/static/media/Linked.6cd9ef1086fa8ffe47b0.png",
     "index.html": "/portfolio/index.html",
     "main.c3cf502f.css.map": "/portfolio/static/css/main.c3cf502f.css.map",
-    "main.de07a70e.js.map": "/portfolio/static/js/main.de07a70e.js.map",
+    "main.38001448.js.map": "/portfolio/static/js/main.38001448.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c3cf502f.css",
-    "static/js/main.de07a70e.js"
+    "static/js/main.38001448.js"
   ]
 }
