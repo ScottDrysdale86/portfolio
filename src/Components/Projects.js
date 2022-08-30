@@ -12,7 +12,10 @@ const Projects = () => {
 		<Wrapper>
 			<TopTitle>Projects</TopTitle>
 			<ProjectBox>
-				<Title>Employee Management System - Solo 1 week</Title>
+				<Title>
+					Employee Management System <br /> Solo - 1 week
+				</Title>
+
 				<Pic src={require("../images/EMS.png")} alt="EMS"></Pic>
 
 				<Description>
@@ -27,7 +30,11 @@ const Projects = () => {
 				</GitLink>
 			</ProjectBox>
 			<ProjectBox>
-				<Title>Football League Standings - Solo 1 Week</Title>
+				<Title>
+					Football League Standings
+					<br />
+					Solo - 1 Week
+				</Title>
 				<Vids
 					id="videos"
 					width="100%"
@@ -50,7 +57,10 @@ const Projects = () => {
 				</GitLink>
 			</ProjectBox>
 			<ProjectBox>
-				<Title>Devil's Grip - Group 1 week</Title>
+				<Title>
+					Devil's Grip <br />
+					Group - 1 week
+				</Title>
 				<Vids
 					id="videos"
 					width="100%"
@@ -73,7 +83,8 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 1%;
+	background-color: #c5c1c0;
+
 	/* background-image: linear-gradient(
 		to bottom right,
 		black,

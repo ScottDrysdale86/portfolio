@@ -17,11 +17,12 @@ const MainPage = () => {
 };
 
 const Wrapper = styled.div`
+	background-color: #c5c1c0;
+
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	margin: 1%;
 	height: 82vh;
 `;
 
