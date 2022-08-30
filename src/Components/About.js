@@ -26,11 +26,13 @@ const Wrapper = styled.div`
 	align-items: center;
 	justify-content: center;
 	margin: 1%;
+	height: 82vh;
 `;
 
 const Title = styled.h1`
 	text-decoration: underline;
 	margin: 0;
+	font-size: 4.5vh;
 `;
 
 const Info = styled.p`
@@ -43,6 +45,7 @@ const Info = styled.p`
 	text-align: center;
 	width: 60%;
 	color: #c5c1c0;
+	font-size: 2.2vh;
 `;
 
 export default About;

@@ -27,7 +27,6 @@ const NavBar = styled.ul`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: 1.3rem;
 	font-weight: bold;
 	background-color: #1a2930;
 	padding: 0;
@@ -35,7 +34,7 @@ const NavBar = styled.ul`
 `;
 
 const Item = styled.li`
-	font-size: 2rem;
+	font-size: 4vh;
 	list-style: none;
 	margin-right: 3%;
 	margin-bottom: 1%;

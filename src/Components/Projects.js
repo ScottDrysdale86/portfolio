@@ -74,6 +74,7 @@ const Wrapper = styled.div`
 const TopTitle = styled.h1`
 	text-decoration: underline;
 	margin: 0;
+	font-size: 4.5vh;
 `;
 
 const ProjectBox = styled.div`
@@ -93,6 +94,7 @@ const Title = styled.h2`
 	text-align: center;
 	text-decoration: underline;
 	color: #c5c1c0;
+	font-size: 3vh;
 `;
 const Pic = styled.img`
 	text-align: center;
@@ -108,6 +110,7 @@ const Vids = styled.video`
 const Description = styled.p`
 	text-align: center;
 	color: #c5c1c0;
+	font-size: 2vh;
 `;
 const GitLink = styled.a`
 	color: black;
@@ -119,6 +122,7 @@ const GitLink = styled.a`
 
 	border-radius: 20px;
 	padding: 1%;
+	font-size: 2.2vh;
 
 	&:hover {
 		background-color: #0a1612;

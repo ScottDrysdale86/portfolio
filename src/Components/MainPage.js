@@ -22,6 +22,7 @@ const Wrapper = styled.div`
 	align-items: center;
 	justify-content: center;
 	margin: 1%;
+	height: 82vh;
 `;
 
 const ProfilePic = styled.img`
@@ -38,7 +39,7 @@ const Details = styled.div`
 `;
 
 const Name = styled.h2`
-	font-size: 1.5rem;
+	font-size: 3.5vh;
 	text-shadow: 1px 1px 2px #0a1612, 5px 5px 5px #f7ce3e, 0 0 5px #c5c1c0;
 `;
 
@@ -46,7 +47,7 @@ const Bullet = styled.h5`
 	margin: 0;
 	margin-bottom: 5%;
 	width: max-content;
-	font-size: 1rem;
+	font-size: 2.2vh;
 `;
 
 export default MainPage;
