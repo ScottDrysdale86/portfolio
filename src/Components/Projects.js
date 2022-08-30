@@ -12,7 +12,7 @@ const Projects = () => {
 		<Wrapper>
 			<TopTitle>Projects</TopTitle>
 			<ProjectBox>
-				<Title>Employee Management System</Title>
+				<Title>Employee Management System - Solo 1 week</Title>
 				<Pic src={require("../images/EMS.png")} alt="EMS"></Pic>
 
 				<Description>
@@ -27,7 +27,7 @@ const Projects = () => {
 				</GitLink>
 			</ProjectBox>
 			<ProjectBox>
-				<Title>Football League Standings</Title>
+				<Title>Football League Standings - Solo 1 Week</Title>
 				<Vids
 					id="videos"
 					width="100%"
@@ -50,9 +50,19 @@ const Projects = () => {
 				</GitLink>
 			</ProjectBox>
 			<ProjectBox>
-				<Title>Upcoming JavaScript Project</Title>
-				<Pic></Pic>
-				<Description>No Idea Yet!!</Description>
+				<Title>Devil's Grip - Group 1 week</Title>
+				<Vids
+					id="videos"
+					width="100%"
+					controls
+					autoplay
+					src={require("../images/footballApp.mov")}
+					type="video/mp4"
+				></Vids>
+				<Description>
+					React app which allows the user to play a solitaire-based
+					card game Devil’s Grip.
+				</Description>
 				<GitLink>Link to Source</GitLink>
 			</ProjectBox>
 		</Wrapper>
