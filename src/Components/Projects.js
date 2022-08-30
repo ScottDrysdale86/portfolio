@@ -56,7 +56,7 @@ const Projects = () => {
 					width="100%"
 					controls
 					autoplay
-					src={require("../images/footballApp.mov")}
+					src={require("../images/DevilsGripcomp2.mov")}
 					type="video/mp4"
 				></Vids>
 				<Description>
