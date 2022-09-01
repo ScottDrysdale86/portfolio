@@ -21,8 +21,7 @@ const About = () => {
 };
 
 const Wrapper = styled.div`
-	background-color: #c5c1c0;
-
+	/* background-color: #c5c1c0; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -39,7 +38,6 @@ const Title = styled.h1`
 const Info = styled.p`
 	border: 4px solid #f7ce3e;
 	box-shadow: 10px 10px 5px #f7ce3e;
-
 	background-color: #0a1612;
 	border-radius: 15px;
 	padding: 2%;

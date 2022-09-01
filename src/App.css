@@ -1,5 +1,21 @@
 body {
 	margin: 0;
+	background: linear-gradient(-45deg, #fec106, #ff6c02);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	/* height: 100vh; */
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 :root {
 	background-color: #1a2930;
@@ -22,19 +38,10 @@ body {
 	text-transform: uppercase;
 }
 
-.aboutMe {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	width: 40%;
-}
-
-.me {
-	margin: 2%;
-}
-
+/* #fec106, */
+/* #ff6c02, */
+/* #23a6d5, */
+/* #23d5ab;  */
 /* #75fd92; */
 /* #D8B53A */
 /* #e9ac1f */

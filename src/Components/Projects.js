@@ -83,7 +83,7 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #c5c1c0;
+	/* background-color: #c5c1c0; */
 
 	/* background-image: linear-gradient(
 		to bottom right,
