@@ -42,9 +42,10 @@ const Info = styled.p`
 	border-radius: 15px;
 	padding: 2%;
 	text-align: center;
-	width: 60%;
+	width: 60vw;
+	height: max-content;
 	color: #c5c1c0;
-	font-size: 2.2vh;
+	font-size: 1.7vh;
 `;
 
 export default About;

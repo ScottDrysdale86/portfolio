@@ -65,7 +65,8 @@ const Wrapper = styled.div`
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	height: 50vh;
+	height: 51vh;
+	margin: 0 3%;
 `;
 
 const ProfilePic = styled.img`
