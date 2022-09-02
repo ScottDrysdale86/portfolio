@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const MainPage = () => {
 	return (
-		<>
+		<Page>
 			<Wrapper>
 				<ProfilePic
 					src={require("../images/me.png")}
@@ -17,6 +17,8 @@ const MainPage = () => {
 					<Bullet> 🔗 Let's Connect Below!</Bullet>
 				</Details>
 			</Wrapper>
+			<Title>Skills: </Title>
+
 			<Skills>
 				<ImageIcon
 					src={require("../images/python.webp")}
@@ -55,18 +57,24 @@ const MainPage = () => {
 					alt="Cypress"
 				></ImageIcon>
 			</Skills>
-		</>
+		</Page>
 	);
 };
 
+const Page = styled.div`
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+`;
 const Wrapper = styled.div`
 	/* background-color: #c5c1c0; */
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	height: 51vh;
-	margin: 0 3%;
+	/* height: 51vh; */
+	margin: 5vh;
 `;
 
 const ProfilePic = styled.img`
@@ -94,18 +102,22 @@ const Bullet = styled.h5`
 	width: max-content;
 	font-size: 2.2vh;
 `;
+const Title = styled.h1`
+	text-align: center;
+	font-size: 2.5vh;
+`;
 
 const Skills = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	height: 30vh;
+	/* height: 30vh; */
 `;
 
 const ImageIcon = styled.img`
 	width: 5vw;
-	height: 6vh;
-	margin: 5% 0%;
+	/* height: 6vh; */
+	margin-bottom: 5%;
 	padding: 1%;
 `;
 
