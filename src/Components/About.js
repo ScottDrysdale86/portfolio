@@ -1,8 +1,15 @@
 import styled from "styled-components";
+import { Dropdown } from "react-bootstrap";
+import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
 
 const About = () => {
 	return (
 		<Wrapper>
+			<Dropdown>
+				<DropdownToggle variant="success" id="dropdown-basic">
+					Select a Project
+				</DropdownToggle>
+			</Dropdown>
 			<Title>About Me</Title>
 			<Info>
 				I am a self-motivated, analytical and enthusiastic individual

@@ -103,7 +103,7 @@ const Skills = styled.div`
 `;
 
 const ImageIcon = styled.img`
-	width: 6vw;
+	width: 5vw;
 	height: 6vh;
 	margin: 5% 0%;
 	padding: 1%;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useEffect } from "react";
+import { Carousel, CarouselItem } from "react-bootstrap";
 
 const Projects = () => {
 	useEffect(() => {
@@ -11,70 +12,77 @@ const Projects = () => {
 	return (
 		<Wrapper>
 			<TopTitle>Projects</TopTitle>
-			<ProjectBox>
-				<Title>
-					Employee Management System <br /> Solo - 1 week
-				</Title>
-
-				<Pic src={require("../images/EMS.png")} alt="EMS"></Pic>
-
-				<Description>
-					Employee Management System made with Python, Flask, HTML and
-					CSS
-				</Description>
-				<GitLink
-					href="https://github.com/ScottDrysdale86/employee_management_system_project"
-					target="_blank"
-				>
-					Link to Source
-				</GitLink>
-			</ProjectBox>
-			<ProjectBox>
-				<Title>
-					Football League Standings
-					<br />
-					Solo - 1 Week
-				</Title>
-				<Vids
-					id="videos"
-					width="100%"
-					controls
-					autoplay
-					src={require("../images/footballApp.mov")}
-					type="video/mp4"
-				></Vids>
-				<Description>
-					React App utilising an API to access and display data. User
-					can filter various football leagues from around the world as
-					well as filter by season to show results. Can also select a
-					team in the league displayed to get more information.
-				</Description>
-				<GitLink
-					href="https://github.com/ScottDrysdale86/Week7-reactApp-API-football"
-					target="_blank"
-				>
-					Link to Source
-				</GitLink>
-			</ProjectBox>
-			<ProjectBox>
-				<Title>
-					Devil's Grip <br />
-					Group - 1 week
-				</Title>
-				<Vids
-					id="videos"
-					width="100%"
-					controls
-					autoplay
-					src={require("../images/DevilsGripcomp2.mov")}
-					type="video/mp4"
-				></Vids>
-				<Description>
-					React app which allows the user to play a solitaire-based
-					card game Devil’s Grip.
-				</Description>
-				<GitLink>Link to Source</GitLink>
-			</ProjectBox>
+			<Carousel slide={false}>
+				<CarouselItem interval={5000}>
+					<ProjectBox>
+						<Title>
+							Employee Management System <br /> Solo - 1 week
+						</Title>
+						<Pic src={require("../images/EMS.png")} alt="EMS"></Pic>
+						<Description>
+							Employee Management System made with Python, Flask,
+							HTML and CSS
+						</Description>
+						<GitLink
+							href="https://github.com/ScottDrysdale86/employee_management_system_project"
+							target="_blank"
+						>
+							Link to Source
+						</GitLink>
+					</ProjectBox>
+				</CarouselItem>
+				<CarouselItem interval={5000}>
+					<ProjectBox>
+						<Title>
+							Football League Standings
+							<br />
+							Solo - 1 Week
+						</Title>
+						<Vids
+							id="videos"
+							width="100%"
+							controls
+							autoplay
+							src={require("../images/footballApp.mov")}
+							type="video/mp4"
+						></Vids>
+						<Description>
+							React App utilising an API to access and display
+							data. User can filter various football leagues from
+							around the world as well as filter by season to show
+							results. Can also select a team in the league
+							displayed to get more information.
+						</Description>
+						<GitLink
+							href="https://github.com/ScottDrysdale86/Week7-reactApp-API-football"
+							target="_blank"
+						>
+							Link to Source
+						</GitLink>
+					</ProjectBox>
+				</CarouselItem>
+				<CarouselItem interval={5000}>
+					<ProjectBox>
+						<Title>
+							Devil's Grip <br />
+							Group - 1 week
+						</Title>
+						<Vids
+							id="videos"
+							width="100%"
+							controls
+							autoplay
+							src={require("../images/DevilsGripcomp2.mov")}
+							type="video/mp4"
+						></Vids>
+						<Description>
+							React app which allows the user to play a
+							solitaire-based card game Devil’s Grip.
+						</Description>
+						<GitLink>Link to Source</GitLink>
+					</ProjectBox>
+				</CarouselItem>
+			</Carousel>
 		</Wrapper>
 	);
 };
@@ -83,6 +91,7 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	height: 80vh;
 	/* background-color: #c5c1c0; */
 
 	/* background-image: linear-gradient(
@@ -108,7 +117,8 @@ const ProjectBox = styled.div`
 	border-radius: 30px;
 	margin: 3%;
 	padding: 1%;
-	width: 50%;
+	width: 60vw;
+	height: 55vh;
 `;
 
 const Title = styled.h2`
@@ -120,10 +130,12 @@ const Title = styled.h2`
 const Pic = styled.img`
 	text-align: center;
 	width: 60%;
+	height: 30vh;
 `;
 const Vids = styled.video`
 	text-align: center;
-	width: 90%;
+	width: 50%;
+	height: 30vh;
 	border: solid 3px #f7ce3e;
 	border-radius: 30px;
 `;
