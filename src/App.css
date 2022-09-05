@@ -21,22 +21,46 @@ body {
 	background-color: #1a2930;
 	color: #0a1612;
 	font-family: "Source Code Pro", monospace;
+	--clr: #ff6c02;
 }
 
-.styledLink {
+/* .styledLink {
+	font-size: 4em;
 	text-decoration: none;
+	letter-spacing: 2px;
+	line-height: 1em;
+	text-transform: uppercase;
+	color: transparent;
+	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+	/* text-decoration: none;
 	padding-inline-start: 0;
 	margin-right: 40%;
-	color: #c5c1c0;
-}
+	color: #c5c1c0; */
+/* } */
 
-.styledLink:hover {
+/* .styledLink::before {
+	content: attr(data-text);
+	position: absolute;
+	color: var(--clr);
+	width: 0;
+	overflow: hidden;
+	transition: 1s;
+	border-right: 8px solid var(-clr);
+	-webkit-text-stroke: 1px var(--clr);
+} */
+
+/* .styledLink:hover::before {
+	width: 100%;
+	filter: drop-shadow(0 0 25px var(--clr));
+} */
+
+/* .styledLink:hover {
 	color: #f7ce3e;
 	transition: all 0.2s ease;
 	border-radius: 10px;
 	padding: 4%;
 	text-transform: uppercase;
-}
+} */
 
 /* #fec106, */
 /* #ff6c02, */
