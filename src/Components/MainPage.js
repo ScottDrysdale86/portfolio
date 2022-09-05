@@ -131,14 +131,14 @@ const Skills = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	/* height: 30vh; */
 `;
 
 const ImageIcon = styled.img`
 	width: 5vw;
-	/* height: 6vh; */
-	margin-bottom: 5%;
-	padding: 1%;
+	aspect-ratio: 1/1;
+	border-radius: 20%;
+	border: 1px solid white;
+	margin: 0.5%;
 `;
 
 export default MainPage;

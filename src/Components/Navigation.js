@@ -36,10 +36,10 @@ const Navigation = () => {
 };
 
 const StyledLink = styled(Link)`
-	font-size: 3em;
+	font-size: 3vh;
 	text-decoration: none;
 	letter-spacing: 2px;
-	line-height: 1em;
+	line-height: 3vh;
 	text-transform: uppercase;
 	color: #c5c1c0 !important;
 	-webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
@@ -70,7 +70,7 @@ const NavBar = styled.ul`
 	position: relative;
 	display: flex;
 	flex-direction: row;
-	gap: 30px;
+	gap: 2vw;
 	background-color: #1a2930;
 	padding: 0.5% 0;
 	padding-left: 3vw;
