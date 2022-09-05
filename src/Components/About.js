@@ -21,7 +21,6 @@ const About = () => {
 };
 
 const Wrapper = styled.div`
-	/* background-color: #c5c1c0; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -31,7 +30,7 @@ const Wrapper = styled.div`
 
 const Title = styled.h1`
 	text-decoration: underline;
-	margin: 0;
+	margin-bottom: 5%;
 	font-size: 4.5vh;
 `;
 

@@ -119,6 +119,7 @@ const Title = styled.h2`
 	text-decoration: underline;
 	color: #c5c1c0;
 	font-size: 3vh;
+	margin-bottom: 2%;
 `;
 const Pic = styled.img`
 	text-align: center;
@@ -137,6 +138,7 @@ const Description = styled.p`
 	text-align: center;
 	color: #c5c1c0;
 	font-size: 2vh;
+	margin-top: 3%;
 `;
 const GitLink = styled.a`
 	color: black;

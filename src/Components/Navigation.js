@@ -43,10 +43,6 @@ const StyledLink = styled(Link)`
 	text-transform: uppercase;
 	color: #c5c1c0 !important;
 	-webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
-	/* text-decoration: none;
-	padding-inline-start: 0;
-	margin-right: 40%;
-	color: #c5c1c0; */
 
 	::before {
 		content: attr(data-text);
@@ -74,22 +70,11 @@ const NavBar = styled.ul`
 	background-color: #1a2930;
 	padding: 0.5% 0;
 	padding-left: 3vw;
-	/* display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: bold;
-	background-color: #1a2930;
-	padding: 0;
-	margin: 0; */
 `;
 
 const Item = styled.li`
 	position: relative;
 	list-style: none;
-	/* font-size: 4vh;
-	list-style: none;
-	margin-right: 3%;
-	margin-bottom: 1%; */
 `;
 
 export default Navigation;

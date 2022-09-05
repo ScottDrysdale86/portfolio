@@ -2,18 +2,6 @@ import styled from "styled-components";
 // import { Carousel } from "3d-react-carousal";
 
 const MainPage = () => {
-	// let slides = [
-	// 	<img src="https://picsum.photos/800/300/?random" alt="1" />,
-	// 	<img src="https://picsum.photos/800/301/?random" alt="2" />,
-	// 	<img src="https://picsum.photos/800/302/?random" alt="3" />,
-	// 	<img src="https://picsum.photos/800/303/?random" alt="4" />,
-	// 	<img src="https://picsum.photos/800/304/?random" alt="5" />,
-	// ];
-
-	// const callback = function (index) {
-	// 	console.log("callback", index);
-	// };
-
 	return (
 		<Page>
 			<Wrapper>
@@ -70,13 +58,6 @@ const MainPage = () => {
 					alt="Cypress"
 				></ImageIcon>
 			</Skills>
-
-			{/* <Carousel
-				slides={slides}
-				autoplay={true}
-				interval={1000}
-				onSlideChange={callback}
-			/> */}
 		</Page>
 	);
 };
@@ -113,6 +94,7 @@ const Details = styled.div`
 
 const Name = styled.h2`
 	font-size: 3.5vh;
+	margin-bottom: 5%;
 	text-shadow: 1px 1px 2px #0a1612, 5px 5px 5px #f7ce3e, 0 0 5px #c5c1c0;
 `;
 
