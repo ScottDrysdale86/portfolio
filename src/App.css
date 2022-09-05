@@ -24,6 +24,35 @@ body {
 	--clr: #ff6c02;
 }
 
+.carousel-indicators {
+	height: 5px;
+}
+
+.carousel-indicators > button {
+	background-color: #0a1612 !important;
+	width: 7vw !important;
+	height: 0.5vh !important;
+}
+
+.carousel-indicators .active {
+	background-color: #ff6c02 !important;
+}
+
+.carousel-inner {
+	overflow: visible !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+	width: 5% !important;
+	margin-right: -12%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	background-color: #0a1612 !important;
+	height: 5rem !important;
+}
 /* .styledLink {
 	font-size: 4em;
 	text-decoration: none;

@@ -13,7 +13,7 @@ const Projects = () => {
 		<Wrapper>
 			<TopTitle>Projects</TopTitle>
 			<Carousel slide={false}>
-				<CarouselItem interval={5000}>
+				<CarouselItem interval={3000000}>
 					<ProjectBox>
 						<Title>
 							Employee Management System <br /> Solo - 1 week
@@ -31,7 +31,7 @@ const Projects = () => {
 						</GitLink>
 					</ProjectBox>
 				</CarouselItem>
-				<CarouselItem interval={5000}>
+				<CarouselItem interval={3000000}>
 					<ProjectBox>
 						<Title>
 							Football League Standings
@@ -61,7 +61,7 @@ const Projects = () => {
 						</GitLink>
 					</ProjectBox>
 				</CarouselItem>
-				<CarouselItem interval={5000}>
+				<CarouselItem interval={3000000}>
 					<ProjectBox>
 						<Title>
 							Devil's Grip <br />
@@ -92,13 +92,6 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	align-items: center;
 	height: 80vh;
-	/* background-color: #c5c1c0; */
-
-	/* background-image: linear-gradient(
-		to bottom right,
-		black,
-		rgb(233, 172, 31)
-	); */
 `;
 
 const TopTitle = styled.h1`
@@ -115,10 +108,10 @@ const ProjectBox = styled.div`
 	border: 4px solid #f7ce3e;
 	box-shadow: 10px 10px 5px #f7ce3e;
 	border-radius: 30px;
-	margin: 3%;
+	margin: 5%;
 	padding: 1%;
-	width: 60vw;
-	height: 55vh;
+	width: 50vw;
+	aspect-ratio: 3/1;
 `;
 
 const Title = styled.h2`
