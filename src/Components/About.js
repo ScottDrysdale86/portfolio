@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ReactTooltip from "react-tooltip";
 
 const About = () => {
 	return (
@@ -16,6 +17,53 @@ const About = () => {
 				professionally by expanding on the concepts I have and will
 				learn.
 			</Info>
+			<h3>Languages/Frameworks</h3>
+			<Skills>
+				<a data-tip="Flask, Jinja">
+					<ImageIcon
+						src={require("../images/python.webp")}
+						alt="Python"
+					></ImageIcon>
+				</a>
+				<ReactTooltip place="bottom" type="dark" effect="solid" />
+				<ImageIcon
+					src={require("../images/html.webp")}
+					alt="HTML"
+				></ImageIcon>
+				<ImageIcon
+					src={require("../images/css.webp")}
+					alt="CSS"
+				></ImageIcon>
+				<a data-tip="React">
+					<ImageIcon
+						src={require("../images/javascript.webp")}
+						alt="JS"
+					></ImageIcon>
+				</a>
+			</Skills>
+			<h3>Databases</h3>
+			<Skills>
+				<a data-tip="PGAdmin, Postico">
+					<ImageIcon
+						src={require("../images/postgres.webp")}
+						alt="Postgres"
+					></ImageIcon>
+				</a>
+				<a data-tip="Insomnia, Compass">
+					<ImageIcon
+						src={require("../images/mongo.webp")}
+						alt="MongoDB"
+					></ImageIcon>
+				</a>
+			</Skills>{" "}
+			<h3>Testing</h3>
+			<Skills>
+				<ImageIcon
+					src={require("../images/cypress.webp")}
+					alt="Cypress"
+				></ImageIcon>
+			</Skills>
+			<p>postgres - pgadmin, postico, MongoDB - compass</p>
 		</Wrapper>
 	);
 };
@@ -45,6 +93,20 @@ const Info = styled.p`
 	height: max-content;
 	color: #c5c1c0;
 	font-size: 1.7vh;
+`;
+
+const Skills = styled.div`
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+`;
+
+const ImageIcon = styled.img`
+	width: 5vw;
+	aspect-ratio: 1/1;
+	border-radius: 20%;
+	border: 1px solid white;
+	margin: 0.5%;
 `;
 
 export default About;
