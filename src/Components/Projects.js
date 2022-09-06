@@ -91,7 +91,7 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 80vh;
+	height: max-content;
 `;
 
 const TopTitle = styled.h1`
@@ -110,7 +110,7 @@ const ProjectBox = styled.div`
 	border-radius: 30px;
 	margin: 5%;
 	padding: 1%;
-	width: 50vw;
+	width: 80vw;
 	aspect-ratio: 3/1;
 `;
 
@@ -128,10 +128,10 @@ const Pic = styled.img`
 `;
 const Vids = styled.video`
 	text-align: center;
-	width: 50%;
-	height: 30vh;
+	width: 70%;
+	aspect-ratio: 2/1;
 	border: solid 3px #f7ce3e;
-	border-radius: 30px;
+	border-radius: 5%;
 `;
 
 const Description = styled.p`
