@@ -24,8 +24,13 @@ body {
 	--clr: #ff6c02;
 }
 
+.carousel {
+	margin-left: -7%;
+}
+
 .carousel-indicators {
 	height: 5px;
+	margin-left: 25% !important;
 }
 
 .carousel-indicators > button {
@@ -45,7 +50,7 @@ body {
 .carousel-control-next,
 .carousel-control-prev {
 	width: 5% !important;
-	margin-right: -12%;
+	margin-right: -11%;
 }
 
 .carousel-control-next-icon,
