@@ -19,13 +19,23 @@ const About = () => {
 			</Info>
 			<h3>Languages/Frameworks</h3>
 			<Skills>
-				<a data-tip="Flask, Jinja">
+				<a data-tip data-for='python'>
 					<ImageIcon
 						src={require("../images/python.webp")}
 						alt="Python"
 					></ImageIcon>
 				</a>
-				<ReactTooltip place="bottom" type="dark" effect="solid" />
+				<ReactTooltip id='python' delayHide={1000} place="bottom" type="dark" effect="solid">
+				<SmallImageIcon
+						src={require("../images/flask.webp")}
+						alt="Python"
+				></SmallImageIcon>
+				<SmallImageIcon
+					src={require("../images/jinja.png")}
+					alt="HTML"
+				></SmallImageIcon>
+				</ReactTooltip>
+
 				<ImageIcon
 					src={require("../images/html.webp")}
 					alt="HTML"
@@ -34,28 +44,60 @@ const About = () => {
 					src={require("../images/css.webp")}
 					alt="CSS"
 				></ImageIcon>
-				<a data-tip="React">
+
+				<a data-tip data-for='js'>
 					<ImageIcon
 						src={require("../images/javascript.webp")}
 						alt="JS"
 					></ImageIcon>
 				</a>
+				<ReactTooltip id='js' place="bottom" delayHide={1000} type="dark" effect="solid">
+				<SmallImageIcon
+						src={require("../images/react-128.webp")}
+						alt="Python"
+				></SmallImageIcon>
+				</ReactTooltip>
 			</Skills>
+
 			<h3>Databases</h3>
 			<Skills>
-				<a data-tip="PGAdmin, Postico">
+			<a data-tip data-for='postgres'>
 					<ImageIcon
 						src={require("../images/postgres.webp")}
 						alt="Postgres"
 					></ImageIcon>
-				</a>
-				<a data-tip="Insomnia, Compass">
-					<ImageIcon
-						src={require("../images/mongo.webp")}
-						alt="MongoDB"
-					></ImageIcon>
-				</a>
-			</Skills>{" "}
+			</a>
+			<ReactTooltip id='postgres' place="bottom" delayHide={1000} type="dark" effect="solid">
+				<SmallImageIcon
+						src={require("../images/postico.webp")}
+						alt="postico"
+				></SmallImageIcon>
+				<SmallImageIcon
+						src={require("../images/pgadmin.webp")}
+						alt="pgadmin"
+				></SmallImageIcon>
+			</ReactTooltip>
+
+
+
+			<a data-tip data-for='mongo'>
+				<ImageIcon
+					src={require("../images/mongo.webp")}
+					alt="MongoDB"
+				></ImageIcon>
+			</a>
+			<ReactTooltip id='mongo' place="bottom" delayHide={1000} type="dark" effect="solid">				
+				<SmallImageIcon
+					src={require("../images/insomnia.png")}
+					alt="postico"
+				></SmallImageIcon>
+				<SmallImageIcon
+					src={require("../images/compass.png")}
+					alt="pgadmin"
+				></SmallImageIcon>
+			</ReactTooltip>
+
+			</Skills>
 			<h3>Testing</h3>
 			<Skills>
 				<ImageIcon
@@ -73,7 +115,6 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 82vh;
 `;
 
 const Title = styled.h1`
@@ -107,6 +148,16 @@ const ImageIcon = styled.img`
 	border-radius: 20%;
 	border: 1px solid white;
 	margin: 0.5%;
+`;
+
+const SmallImageIcon = styled.img`
+	width: 2.5vw;
+	aspect-ratio: 1/1;
+	border-radius: 20%;
+	background-color: white;
+	border: 1px solid white;
+	margin: 0.5%;
+	padding: 1%;
 `;
 
 export default About;
