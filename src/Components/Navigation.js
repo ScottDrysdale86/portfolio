@@ -8,27 +8,27 @@ const Navigation = () => {
 				<StyledLink
 					className="styledLink"
 					to="/portfolio"
-					data-text="&nbsp;Home"
+					data-text="&nbsp;&nbsp;Home"
 				>
-					&nbsp;Home&nbsp;
+					&nbsp;&nbsp;Home&nbsp;
 				</StyledLink>
 			</Item>
 			<Item style={{ "--clr": "#ff6c02" }}>
 				<StyledLink
 					className="styledLink"
 					to="/portfolio/About"
-					data-text="&nbsp;About"
+					data-text="&nbsp;&nbsp;About"
 				>
-					&nbsp;About&nbsp;
+					&nbsp;&nbsp;About&nbsp;
 				</StyledLink>
 			</Item>
 			<Item style={{ "--clr": "#ff6c02" }}>
 				<StyledLink
 					className="styledLink"
 					to="/portfolio/Projects"
-					data-text="&nbsp;Projects"
+					data-text="&nbsp;&nbsp;Projects"
 				>
-					&nbsp;Projects&nbsp;
+					&nbsp;&nbsp;Projects&nbsp;
 				</StyledLink>
 			</Item>
 		</NavBar>

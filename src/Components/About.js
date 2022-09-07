@@ -17,23 +17,29 @@ const About = () => {
 				professionally by expanding on the concepts I have and will
 				learn.
 			</Info>
-			<h3>Languages/Frameworks</h3>
+			<h3>Languages</h3>
 			<Skills>
-				<a data-tip data-for='python'>
+				<a data-tip data-for="python">
 					<ImageIcon
 						src={require("../images/python.webp")}
 						alt="Python"
 					></ImageIcon>
 				</a>
-				<ReactTooltip id='python' delayHide={1000} place="bottom" type="dark" effect="solid">
-				<SmallImageIcon
+				<ReactTooltip
+					id="python"
+					delayHide={1000}
+					place="bottom"
+					type="dark"
+					effect="solid"
+				>
+					<SmallImageIcon
 						src={require("../images/flask.webp")}
 						alt="Python"
-				></SmallImageIcon>
-				<SmallImageIcon
-					src={require("../images/jinja.png")}
-					alt="HTML"
-				></SmallImageIcon>
+					></SmallImageIcon>
+					<SmallImageIcon
+						src={require("../images/jinja.png")}
+						alt="HTML"
+					></SmallImageIcon>
 				</ReactTooltip>
 
 				<ImageIcon
@@ -44,68 +50,99 @@ const About = () => {
 					src={require("../images/css.webp")}
 					alt="CSS"
 				></ImageIcon>
+				<ImageIcon
+					src={require("../images/java.png")}
+					alt="CSS"
+				></ImageIcon>
 
-				<a data-tip data-for='js'>
+				<a data-tip data-for="js">
 					<ImageIcon
 						src={require("../images/javascript.webp")}
 						alt="JS"
 					></ImageIcon>
 				</a>
-				<ReactTooltip id='js' place="bottom" delayHide={1000} type="dark" effect="solid">
-				<SmallImageIcon
+				<ReactTooltip
+					id="js"
+					place="bottom"
+					delayHide={1000}
+					type="dark"
+					effect="solid"
+				>
+					<SmallImageIcon
 						src={require("../images/react-128.webp")}
 						alt="Python"
-				></SmallImageIcon>
+					></SmallImageIcon>
 				</ReactTooltip>
 			</Skills>
 
 			<h3>Databases</h3>
 			<Skills>
-			<a data-tip data-for='postgres'>
+				<a data-tip data-for="postgres">
 					<ImageIcon
 						src={require("../images/postgres.webp")}
 						alt="Postgres"
 					></ImageIcon>
-			</a>
-			<ReactTooltip id='postgres' place="bottom" delayHide={1000} type="dark" effect="solid">
-				<SmallImageIcon
+				</a>
+				<ReactTooltip
+					id="postgres"
+					place="bottom"
+					delayHide={1000}
+					type="dark"
+					effect="solid"
+				>
+					<SmallImageIcon
 						src={require("../images/postico.webp")}
 						alt="postico"
-				></SmallImageIcon>
-				<SmallImageIcon
-						src={require("../images/pgadmin.webp")}
+					></SmallImageIcon>
+					<SmallImageIcon
+						src={require("../images/pgadmin2.png")}
 						alt="pgadmin"
-				></SmallImageIcon>
-			</ReactTooltip>
+					></SmallImageIcon>
+				</ReactTooltip>
 
-
-
-			<a data-tip data-for='mongo'>
-				<ImageIcon
-					src={require("../images/mongo.webp")}
-					alt="MongoDB"
-				></ImageIcon>
-			</a>
-			<ReactTooltip id='mongo' place="bottom" delayHide={1000} type="dark" effect="solid">				
-				<SmallImageIcon
-					src={require("../images/insomnia.png")}
-					alt="postico"
-				></SmallImageIcon>
-				<SmallImageIcon
-					src={require("../images/compass.png")}
-					alt="pgadmin"
-				></SmallImageIcon>
-			</ReactTooltip>
-
+				<a data-tip data-for="mongo">
+					<ImageIcon
+						src={require("../images/mongo.webp")}
+						alt="MongoDB"
+					></ImageIcon>
+				</a>
+				<ReactTooltip
+					id="mongo"
+					place="bottom"
+					delayHide={1000}
+					type="dark"
+					effect="solid"
+				>
+					<SmallImageIcon
+						src={require("../images/insomnia.png")}
+						alt="postico"
+					></SmallImageIcon>
+					<SmallImageIcon
+						src={require("../images/compass.png")}
+						alt="pgadmin"
+					></SmallImageIcon>
+				</ReactTooltip>
 			</Skills>
 			<h3>Testing</h3>
 			<Skills>
+				<ImageIcon
+					src={require("../images/unnittest.png")}
+					alt="Cypress"
+				></ImageIcon>
+
+				<ImageIcon
+					src={require("../images/mocha.png")}
+					alt="Cypress"
+				></ImageIcon>
+				<ImageIcon
+					src={require("../images/junit5.png")}
+					alt="Cypress"
+				></ImageIcon>
 				<ImageIcon
 					src={require("../images/cypress.webp")}
 					alt="Cypress"
 				></ImageIcon>
 			</Skills>
-			<p>postgres - pgadmin, postico, MongoDB - compass</p>
 		</Wrapper>
 	);
 };
@@ -119,7 +156,7 @@ const Wrapper = styled.div`
 
 const Title = styled.h1`
 	text-decoration: underline;
-	margin-bottom: 5%;
+	margin: 2%;
 	font-size: 4.5vh;
 `;
 
@@ -134,12 +171,14 @@ const Info = styled.p`
 	height: max-content;
 	color: #c5c1c0;
 	font-size: 1.7vh;
+	margin-bottom: 3%;
 `;
 
 const Skills = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin-bottom: 1%;
 `;
 
 const ImageIcon = styled.img`
@@ -147,7 +186,7 @@ const ImageIcon = styled.img`
 	aspect-ratio: 1/1;
 	border-radius: 20%;
 	border: 1px solid white;
-	margin: 0.5%;
+	margin: 2%;
 `;
 
 const SmallImageIcon = styled.img`
@@ -156,7 +195,7 @@ const SmallImageIcon = styled.img`
 	border-radius: 20%;
 	background-color: white;
 	border: 1px solid white;
-	margin: 0.5%;
+	margin: 5%;
 	padding: 1%;
 `;
 

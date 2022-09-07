@@ -59,6 +59,11 @@ body {
 	height: 5rem !important;
 }
 
+.__react_component_tooltip {
+	display: flex !important;
+	justify-content: space-around !important;
+}
+
 /* .styledLink {
 	font-size: 4em;
 	text-decoration: none;
