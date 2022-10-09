@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import { Carousel } from "3d-react-carousal";
 
 const MainPage = () => {
 	return (
@@ -14,7 +13,7 @@ const MainPage = () => {
 					<Name> 👋 Hi, I'm Scott Drysdale</Name>
 					<Bullet> 💻 I'm a Software Developer</Bullet>
 					<Bullet> 🌍 Based in West Lothian, Scotland</Bullet>
-					<Bullet> 💭 Student at CodeClan</Bullet>
+					<Bullet> 💭 Looking for a Junior Developer Role</Bullet>
 					<Bullet> 🔗 Let's Connect Below!</Bullet>
 				</Details>
 			</Wrapper>

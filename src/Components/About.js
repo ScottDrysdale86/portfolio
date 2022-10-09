@@ -7,7 +7,7 @@ const About = () => {
 			<Title>About Me</Title>
 			<Info>
 				I am a self-motivated, analytical and enthusiastic individual
-				who is currently completing a Professional Software Development
+				who has completed a Professional Software Development
 				course at Code Clan and have a BEng Hons Electrical and Computer
 				Engineering from Heriot Watt University. I have over 12 years of
 				experience working within a customer focused role who often had

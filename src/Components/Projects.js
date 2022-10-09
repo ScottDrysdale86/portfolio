@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useEffect, useState } from "react";
 import { Carousel, CarouselItem } from "react-bootstrap";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Projects = () => {
 	const [extraContent, setExtraContent] = useState(false);
@@ -133,6 +133,42 @@ const Projects = () => {
 			</Description>
 		</>
 	);
+
+	const extraContentBaby = (
+		<>
+			<SubHeading>MVP</SubHeading>
+			<ListedTasks>
+				<Task>
+					Create a React Native App that allows the user to record
+					baby sleep and feed data.
+				</Task>
+				<Task>
+					A user should be able to view baby sleep/feed data in a
+					visual way.
+				</Task>
+				<Task>App should be available on Android and iOS</Task>
+			</ListedTasks>
+			<SubHeading>Extension</SubHeading>
+			<ListedTasks>
+				<Task>Allow multiple babies to be recorded. </Task>
+				<Task>Have a built in white noise machine</Task>
+				<Task>Have a teeth timer</Task>
+				<Task>Sensory video</Task>
+			</ListedTasks>
+			<SubHeading>If I had more time</SubHeading>
+			<Description>
+				Add notification feature to remind user a feed or sleep may be
+				due.
+			</Description>
+			<SubHeading>Reflection</SubHeading>
+			<Description>
+				Great yet challenging team project. In had not used React Native
+				before so had to learn this too. Dealing with the data was
+				sometimes a challenge as they were mainly date time formats.
+			</Description>
+		</>
+	);
+
 	const linkName = extraContent ? "Less Info << " : "More Info >> ";
 
 	useEffect(() => {
@@ -145,6 +181,50 @@ const Projects = () => {
 		<Wrapper>
 			<TopTitle>Projects</TopTitle>
 			<Carousel slide={false}>
+				<CarouselItem interval={3000000}>
+					<ProjectBox>
+						<Title>
+							Wah Wah Baby App <br /> Group - 2 week
+						</Title>
+
+						{/* <Pic src={require("")} alt="Baby App Screenshots"></Pic> */}
+						<SubHeading>Task</SubHeading>
+						<Description>
+							Build a cross platform app which allows a uset to
+							log sleep and feed data for babies and shows the
+							information in a visual way.
+						</Description>
+						<SubHeading>Tech</SubHeading>
+						<Description>
+							Back-End: Java Spring Boot.
+							<br />
+							Front-End: React Native
+						</Description>
+						<ExtraBox>
+							<ExtraLink
+								className="read-more-link"
+								onClick={() => {
+									setExtraContent(!extraContent);
+								}}
+							>
+								<ExtraTitle>{linkName}</ExtraTitle>
+							</ExtraLink>
+							{extraContent && extraContentBaby}
+						</ExtraBox>
+						<GitLink
+							href="https://github.com/ScottDrysdale86/babyApp"
+							target="_blank"
+						>
+							Link to Backend Source
+						</GitLink>
+						<GitLink
+							href="https://github.com/ScottDrysdale86/BabyAppFrontEnd"
+							target="_blank"
+						>
+							Link to Frontend Source
+						</GitLink>
+					</ProjectBox>
+				</CarouselItem>
 				<CarouselItem interval={3000000}>
 					<ProjectBox>
 						<Title>
