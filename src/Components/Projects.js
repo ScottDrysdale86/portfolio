@@ -187,7 +187,10 @@ const Projects = () => {
 							Wah Wah Baby App <br /> Group - 2 week
 						</Title>
 
-						{/* <Pic src={require("")} alt="Baby App Screenshots"></Pic> */}
+						<Pic
+							src={require("../images/AppScShots.png")}
+							alt="Baby App Screenshots"
+						></Pic>
 						<SubHeading>Task</SubHeading>
 						<Description>
 							Build a cross platform app which allows a uset to
@@ -398,7 +401,7 @@ const SubHeading = styled.h3`
 const Pic = styled.img`
 	text-align: center;
 	width: 60%;
-	height: 30vh;
+	height: 40vh;
 	margin-bottom: 1%;
 `;
 const Vids = styled.video`

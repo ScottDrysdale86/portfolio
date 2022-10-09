@@ -21,6 +21,10 @@ const MainPage = () => {
 
 			<Skills>
 				<ImageIcon
+					src={require("../images/java.png")}
+					alt="Python"
+				></ImageIcon>
+				<ImageIcon
 					src={require("../images/python.webp")}
 					alt="Python"
 				></ImageIcon>
