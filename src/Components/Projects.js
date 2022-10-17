@@ -162,9 +162,18 @@ const Projects = () => {
 			</Description>
 			<SubHeading>Reflection</SubHeading>
 			<Description>
-				Great yet challenging team project. In had not used React Native
-				before so had to learn this too. Dealing with the data was
-				sometimes a challenge as they were mainly date time formats.
+				It was our groups first time using react-native and on
+				reflection we jumped a little too quick into getting started and
+				decide to use the most recent version of react native-without
+				checking stability or compatibility with our imports. That being
+				said, once set up, it was a great projectto be part of. I
+				started off by implementing the Java Spring backend and then
+				moving onto work on front end features. This started with the
+				main (add feed) page which allowed the user to log feeds. I
+				thewm moved onto the summary page where I dealt with fetching
+				the data and number crunching the date/times and feed volumes to
+				display charts and average 7 day results. Dealing with the data
+				was sometimes a challenge as they were mainly date time formats.
 			</Description>
 		</>
 	);
